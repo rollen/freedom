@@ -1,0 +1,1 @@
+window.clientDeploy=['./engine/_deploy', 'index', 'client'];

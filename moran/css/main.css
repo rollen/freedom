@@ -1,0 +1,94 @@
+/* ------------------------------------------------ */
+/* FUNDAMENTALS */
+/* ------------------------------------------------ */
+html {
+	height:100%;
+}
+
+body {
+	margin:0;
+	padding:0;
+	overflow:hidden;
+	background-color:#fff;
+	height:100%;
+}
+
+canvas {
+	image-rendering:optimizeSpeed;
+}
+
+/* This class is applied to all entities when using DOM rendering
+and it is best kept how it is unless you know what you're doing! */
+.igeEntity {
+	position:absolute;
+}
+
+/* ------------------------------------------------ */
+/* LOGGING DIVS CSS */
+/* ------------------------------------------------ */
+#igeLogDiv {
+	position:absolute;
+	left:10px;
+	bottom:10px;
+	width:500px;
+	z-index:110000;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:10px;
+	color:#FFF;
+	background-color:#111;
+	border:1px solid #666;
+	border-radius:10px;
+	padding:10px;
+	display:block;
+}
+
+#igeCordDiv {
+	position:absolute;
+	left:540px;
+	bottom:10px;
+	width:100px;
+	z-index:110000;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:10px;
+	color:#FFF;
+	background-color:#111;
+	border:1px solid #666;
+	border-radius:10px;
+	padding:10px;
+	display:block;
+}
+
+#igeNetStatsHolder {
+	position:absolute;
+	right:10px;
+	bottom:50px;
+	width:500px;
+	height:150px;
+	z-index:110000;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:10px;
+	color:#FFF;
+	background-color:#111;
+	border:1px solid #666;
+	padding:10px;
+	overflow:hidden;
+	display:none;
+}
+
+#igeNetStats {
+	width:500px;
+	height:150px;
+	display:none;
+}
+
+/* ------------------------------------------------ */
+/* SCREEN CONTAINER CSS */
+/* ------------------------------------------------ */
+
+#mainView {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+}
