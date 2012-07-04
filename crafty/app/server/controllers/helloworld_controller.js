@@ -1,10 +1,15 @@
-function HelloWorldController(response){
+function ClientApplicationController(httpFileResponseWriter, fileInfoService, folderpath){
   var object = {};
   object.index = function(){
-    response.write("<h1>Hello World</h1>");
-    response.end();
+    var filename = 'index.html'
+    var fileInfo = fileInfoService(fullyQualifiedPathToIndex(), filename);
+    httpFileResponseWriter.writeToResponseAndEnd(fileInfo);
+  }
+
+  function fullyQualifiedPathToIndex(){
+    return folderpath.join(folderpath.filepath('client'), 'client');
   }
   return object;
 }
 
-module.exports = HelloWorldController;
+module.exports = ClientApplicationController;

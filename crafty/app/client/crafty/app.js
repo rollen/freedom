@@ -16,8 +16,8 @@ PLAYER_HEIGHT_HALF = PLAYER_HEIGHT / 2;
 // each time we require access to an entity. In any case, just
 // remember, there might be a better and saner way to do this
 
-var game_scene = null;
-var player = null;
+var player = Crafty.e();
+var game_scene = Crafty.e();
 
 
 function init_general() {
@@ -25,7 +25,7 @@ function init_general() {
     Crafty.init(CRAFTY_WIDTH, CRAFTY_HEIGHT);
     Crafty.background("black");
 
-    game_scene = Crafty.e();
+    //var game_scene = Crafty.e();
     game_scene.addComponent("2D, Mouse");
     game_scene.attr({x:0, y:0, w: CRAFTY_WIDTH, h: CRAFTY_HEIGHT});
     game_scene.areaMap([0, 0], [CRAFTY_WIDTH, 0],
@@ -90,7 +90,7 @@ function init_components() {
 
 
 function init_player() {
-    player = Crafty.e();
+    //var player = Crafty.e();
     player.addComponent("2D, DOM, Mouse");
     player.addComponent("Color").color("red");
     player.addComponent("Movement").movement(0.1);
@@ -111,7 +111,6 @@ function init_controls() {
         player.moveTo(moveToX, moveToY);
 
     });
-
 }
 
 function do_magic() {
