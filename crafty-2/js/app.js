@@ -16,8 +16,8 @@ PLAYER_HEIGHT_HALF = PLAYER_HEIGHT / 2;
 // each time we require access to an entity. In any case, just
 // remember, there might be a better and saner way to do this
 
-var game_scene = Crafty.e();
 var player = Crafty.e();
+var game_scene = Crafty.e();
 
 
 function init_general() {
